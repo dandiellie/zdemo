@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "";
+
+    Html.AddCssFileParts("~/Plugins/Misc.BsInstagramAdMarket/Content/styles.css");
+}
+@model BsInstagramOfferModel
+@using Nop.Core.Infrastructure
+@using BsWebApi.Models;
+@using Nop.Web.Framework;
+@using Nop.Web.Framework.UI;
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(false)
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Id)
+    <div class="section-header">
+
+        <div class="options">
+            <input type="submit" name="save" class="k-button" value="@T("Admin.Common.Save")" />
+            <input type="submit" name="save-continue" class="k-button" value="@T("Admin.Common.SaveContinue")" />
+        </div>
+    </div>
+
+    
+    
+}

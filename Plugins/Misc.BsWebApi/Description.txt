@@ -1,0 +1,8 @@
+﻿Group: Misc
+FriendlyName: Web Api 
+SystemName: BrainStation.BsWebApi
+Version: 1.0
+SupportedVersions: 3.70
+Author: Anik Saha, BrainStation-23
+DisplayOrder: 1
+FileName: Nop.Plugin.Misc.BsWebApi.dll
