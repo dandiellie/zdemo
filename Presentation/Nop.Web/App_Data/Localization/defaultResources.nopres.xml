@@ -460,7 +460,7 @@
     <Value>Log out</Value>
   </LocaleResource>
   <LocaleResource Name="Account.MyAccount">
-    <Value>My account</Value>
+    <Value>My Account</Value>
   </LocaleResource>
   <LocaleResource Name="Account.Navigation">
     <Value>My account</Value>
@@ -1159,10 +1159,10 @@
     <Value>Order total</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Affiliates.Orders.PaymentStatus">
-    <Value>Payment status</Value>
+    <Value>Approval status</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Affiliates.Orders.PaymentStatus.Hint">
-    <Value>Search by a specific payment status e.g. Paid.</Value>
+    <Value>Search by a specific approval status e.g. Approved.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Affiliates.Orders.ShippingStatus">
     <Value>Shipping status</Value>
@@ -8287,7 +8287,7 @@
     <Value>Order total</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Customers.Customers.Orders.PaymentStatus">
-    <Value>Payment status</Value>
+    <Value>Approval status</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Customers.Customers.Orders.ShippingStatus">
     <Value>Shipping status</Value>
@@ -8929,7 +8929,7 @@
     <Value>The unique ID of this order.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.Fields.MarkAsPaid">
-    <Value>Mark as paid</Value>
+    <Value>Mark as approved</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.Fields.OrderGuid">
     <Value>Order GUID</Value>
@@ -9037,10 +9037,10 @@
     <Value>The payment method additional fee for this order (including tax).</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.Fields.PaymentStatus">
-    <Value>Payment status</Value>
+    <Value>Approval status</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.Fields.PaymentStatus.Hint">
-    <Value>The status of the payment.</Value>
+    <Value>The status of the approval.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.Fields.Profit">
     <Value>Profit</Value>
@@ -9196,10 +9196,10 @@
     <Value>Search by a specific payment method.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.List.PaymentStatus">
-    <Value>Payment status</Value>
+    <Value>Approval status</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.List.PaymentStatus.Hint">
-    <Value>Search by a specific payment status e.g. Paid.</Value>
+    <Value>Search by a specific approval status e.g. Approved.</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.Orders.List.Product">
     <Value>Product</Value>
@@ -10387,7 +10387,7 @@
     <Value>Total not yet shipped orders</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.SalesReport.Incomplete.TotalUnpaidOrders">
-    <Value>Total unpaid orders (pending payment status)</Value>
+    <Value>Total unapproved orders (pending approval status)</Value>
   </LocaleResource>
   <LocaleResource Name="Admin.SalesReport.Incomplete.View">
     <Value>view all</Value>
@@ -12022,7 +12022,7 @@
     <Value>Authorized</Value>
   </LocaleResource>
   <LocaleResource Name="Enums.Nop.Core.Domain.Payments.PaymentStatus.Paid">
-    <Value>Paid</Value>
+    <Value>Approved</Value>
   </LocaleResource>
   <LocaleResource Name="Enums.Nop.Core.Domain.Payments.PaymentStatus.PartiallyRefunded">
     <Value>Partially refunded</Value>

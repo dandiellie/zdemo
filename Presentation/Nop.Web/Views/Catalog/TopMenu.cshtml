@@ -39,6 +39,7 @@
 
 <ul class="top-menu">
     @Html.Widget("header_menu_before")
+    <li><a href="@Url.RouteUrl("HomePage")">Home</a></li>
     @{
         var rootCategories = Model.Categories.Where(x => x.IncludeInTopMenu).ToList();
     }
@@ -50,7 +51,7 @@
     {
         <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
     }
-    @if (rootCategories.Count == 0 && Model.Topics.Count == 0)
+    @*@if (rootCategories.Count == 0 && Model.Topics.Count == 0)
     {
         //no categories or topis to display? in this case let's diplay some default menu items (should we?)
         <li><a href="@Url.RouteUrl("HomePage")">@T("HomePage")</a></li>
@@ -70,7 +71,8 @@
             <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
         }
         <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
-    }
+    }*@
+    <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
     @Html.Widget("header_menu_after")
 </ul>
 
@@ -81,6 +83,7 @@
     <div class="menu-toggle">@responsiveMenuTitle</div>
     <ul class="top-menu mobile">
         @Html.Widget("mob_header_menu_before")
+        <li><a href="@Url.RouteUrl("HomePage")">Home</a></li>
         @foreach (var category in rootCategoriesResponsive)
         {
             @RenderCategoryLine(category, 0, true)
@@ -89,7 +92,7 @@
         {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
         }
-        @if (rootCategoriesResponsive.Count == 0 && Model.Topics.Count == 0)
+        @*@if (rootCategoriesResponsive.Count == 0 && Model.Topics.Count == 0)
         {
             //no categories or topis to display? in this case let's diplay some default menu items (should we?)
             <li><a href="@Url.RouteUrl("HomePage")">@T("HomePage")</a></li>
@@ -110,7 +113,8 @@
                 <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
             }
             <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
-        }
+        }*@
+        <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
         @Html.Widget("mob_header_menu_after")
     </ul>
     

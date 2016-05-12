@@ -3954,13 +3954,29 @@ namespace Nop.Services.Installation
                 IsSystemRole = true,
                 SystemName = SystemCustomerRoleNames.Vendors,
             };
+            var crApprovers = new CustomerRole
+            {
+                Name = "Approvers",
+                Active = true,
+                IsSystemRole = true,
+                SystemName = SystemCustomerRoleNames.Approvers,
+            };
+            var crFacilitators = new CustomerRole
+            {
+                Name = "Facilitators",
+                Active = true,
+                IsSystemRole = true,
+                SystemName = SystemCustomerRoleNames.Facilitators,
+            };
             var customerRoles = new List<CustomerRole>
                                 {
                                     crAdministrators,
                                     crForumModerators,
                                     crRegistered,
                                     crGuests,
-                                    crVendors
+                                    crVendors,
+                                    crApprovers,
+                                    crFacilitators
                                 };
             _customerRoleRepository.Insert(customerRoles);
 
@@ -4383,10 +4399,11 @@ namespace Nop.Services.Installation
                                        {
                                            SystemName = "AboutUs",
                                            IncludeInSitemap = false,
+                                           IncludeInTopMenu = true,
                                            IsPasswordProtected = false,
                                            IncludeInFooterColumn1 = true,
                                            DisplayOrder = 20,
-                                           Title = "About us",
+                                           Title = "About Us",
                                            Body = "<p>Put your &quot;About Us&quot; information here. You can edit this in the admin site.</p>",
                                            TopicTemplateId = defaultTopicTemplate.Id
                                        },
@@ -4437,8 +4454,8 @@ namespace Nop.Services.Installation
                                            IncludeInSitemap = false,
                                            IsPasswordProtected = false,
                                            DisplayOrder = 1,
-                                           Title = "Welcome to our store",
-                                           Body = "<p>Online shopping is the process consumers go through to purchase products or services over the Internet. You can edit this in the admin site.</p><p>If you have questions, see the <a href=\"http://www.nopcommerce.com/documentation.aspx\">Documentation</a>, or post in the <a href=\"http://www.nopcommerce.com/boards/\">Forums</a> at <a href=\"http://www.nopcommerce.com\">nopCommerce.com</a></p>",
+                                           Title = "Your Company Procurement Tool",
+                                           Body = "<h1 style=\"text-align: center;\">Convenient. Efficient. Innovative. Smart.</h1>",
                                            TopicTemplateId = defaultTopicTemplate.Id
                                        },
                                    new Topic

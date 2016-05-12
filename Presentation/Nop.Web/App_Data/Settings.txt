@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=MALACHI\SQLEXPRESS;Initial Catalog=nopCommerce_demo-template;Integrated Security=True;Persist Security Info=True

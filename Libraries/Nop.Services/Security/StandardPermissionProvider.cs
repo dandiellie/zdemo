@@ -228,6 +228,24 @@ namespace Nop.Services.Security
                         ManageProducts,
                         ManageOrders
                     }
+                },
+                new DefaultPermissionRecord
+                {
+                    CustomerRoleSystemName = SystemCustomerRoleNames.Approvers,
+                    PermissionRecords = new[]
+                    {
+                        AccessAdminPanel,
+                        ManageOrders
+                    }
+                },
+                new DefaultPermissionRecord
+                {
+                    CustomerRoleSystemName = SystemCustomerRoleNames.Facilitators,
+                    PermissionRecords = new[]
+                    {
+                        AccessAdminPanel,
+                        ManageCustomers
+                    }
                 }
             };
         }
