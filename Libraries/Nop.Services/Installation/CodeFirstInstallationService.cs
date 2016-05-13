@@ -4070,11 +4070,11 @@ namespace Nop.Services.Installation
                                        {
                                            Email = "test@mail.com",
                                            DisplayName = "Store name",
-                                           Host = "smtp.mail.com",
+                                           Host = "smtp.office365.com",
                                            Port = 25,
-                                           Username = "123",
+                                           Username = "test@mail.com",
                                            Password = "123",
-                                           EnableSsl = false,
+                                           EnableSsl = true,
                                            UseDefaultCredentials = false
                                        },
                                };
@@ -4802,7 +4802,7 @@ namespace Nop.Services.Installation
 
             settingService.SaveSetting(new RewardPointsSettings
                 {
-                    Enabled = true,
+                    Enabled = false,
                     ExchangeRate = 1,
                     PointsForRegistration = 0,
                     PointsForPurchases_Amount = 10,
@@ -4867,11 +4867,11 @@ namespace Nop.Services.Installation
                     MinOrderSubtotalAmountIncludingTax = false,
                     MinOrderTotalAmount = 0,
                     AnonymousCheckoutAllowed = true,
-                    TermsOfServiceOnShoppingCartPage = true,
+                    TermsOfServiceOnShoppingCartPage = false,
                     TermsOfServiceOnOrderConfirmPage = false,
                     OnePageCheckoutEnabled = true,
                     OnePageCheckoutDisplayOrderTotalsOnPaymentInfoTab = false,
-                    DisableBillingAddressCheckoutStep = false,
+                    DisableBillingAddressCheckoutStep = true,
                     DisableOrderCompletedPage = false,
                     AttachPdfInvoiceToOrderPlacedEmail = false,
                     AttachPdfInvoiceToOrderCompletedEmail = false,
@@ -4895,7 +4895,7 @@ namespace Nop.Services.Installation
             settingService.SaveSetting(new ShippingSettings
                 {
                     ActiveShippingRateComputationMethodSystemNames = new List<string> { "Shipping.FixedRate" },
-                    AllowPickUpInStore = true,
+                    AllowPickUpInStore = false,
                     PickUpInStoreFee = decimal.Zero,
                     UseWarehouseLocation = false,
                     NotifyCustomerAboutShippingFromMultipleLocations = false,
@@ -4906,7 +4906,7 @@ namespace Nop.Services.Installation
                     DisplayShipmentEventsToCustomers = false,
                     DisplayShipmentEventsToStoreOwner = false,
                     ReturnValidOptionsIfThereAreAny = true,
-                    BypassShippingMethodSelectionIfOnlyOne = false,
+                    BypassShippingMethodSelectionIfOnlyOne = true,
                     UseCubeRootMethod = true
                 });
 
@@ -4914,10 +4914,10 @@ namespace Nop.Services.Installation
                 {
                     ActivePaymentMethodSystemNames = new List<string> 
                     {
-                        "Payments.CheckMoneyOrder",
-                        "Payments.Manual",
-                        "Payments.PayInStore",
-                        "Payments.PurchaseOrder",
+                        //"Payments.CheckMoneyOrder",
+                        //"Payments.Manual",
+                        //"Payments.PayInStore",
+                        "Payments.PurchaseOrder"
                     },
                     AllowRePostingPayments = true,
                     BypassPaymentMethodSelectionIfOnlyOne = true,

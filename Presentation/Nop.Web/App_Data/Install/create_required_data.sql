@@ -105,7 +105,7 @@ GO
 
 
 SET IDENTITY_INSERT [dbo].[EmailAccount] ON
-INSERT [dbo].[EmailAccount] ([Id], [Email], [DisplayName], [Host], [Port], [Username], [Password], [EnableSsl], [UseDefaultCredentials]) VALUES (1, N'test@mail.com', N'Store name', N'smtp.mail.com', 25, N'123', N'123', 0, 0)
+INSERT [dbo].[EmailAccount] ([Id], [Email], [DisplayName], [Host], [Port], [Username], [Password], [EnableSsl], [UseDefaultCredentials]) VALUES (1, N'test@mail.com', N'Store name', N'smtp.office365.com', 25, N'test@mail.com', N'123', 1, 0)
 SET IDENTITY_INSERT [dbo].[EmailAccount] OFF
 GO
 
@@ -767,7 +767,7 @@ INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (205, N'storein
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (206, N'externalauthenticationsettings.autoregisterenabled', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (207, N'externalauthenticationsettings.requireemailvalidation', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (208, N'externalauthenticationsettings.activeauthenticationmethodsystemnames', N'', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (209, N'rewardpointssettings.enabled', N'True', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (209, N'rewardpointssettings.enabled', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (210, N'rewardpointssettings.exchangerate', N'1', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (211, N'rewardpointssettings.minimumrewardpointstouse', N'0', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (212, N'rewardpointssettings.pointsforregistration', N'0', 0)
@@ -813,11 +813,11 @@ INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (251, N'orderse
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (252, N'ordersettings.minordersubtotalamountincludingtax', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (253, N'ordersettings.minordertotalamount', N'0', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (254, N'ordersettings.anonymouscheckoutallowed', N'True', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (255, N'ordersettings.termsofserviceonshoppingcartpage', N'True', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (255, N'ordersettings.termsofserviceonshoppingcartpage', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (256, N'ordersettings.termsofserviceonorderconfirmpage', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (257, N'ordersettings.onepagecheckoutenabled', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (258, N'ordersettings.onepagecheckoutdisplayordertotalsonpaymentinfotab', N'False', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (259, N'ordersettings.disablebillingaddresscheckoutstep', N'False', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (259, N'ordersettings.disablebillingaddresscheckoutstep', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (260, N'ordersettings.disableordercompletedpage', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (261, N'ordersettings.attachpdfinvoicetoorderplacedemail', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (262, N'ordersettings.attachpdfinvoicetoorderpaidemail', N'False', 0)
@@ -835,7 +835,7 @@ INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (273, N'securit
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (274, N'securitysettings.honeypotenabled', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (275, N'securitysettings.honeypotinputname', N'hpinput', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (276, N'shippingsettings.activeshippingratecomputationmethodsystemnames', N'Shipping.FixedRate', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (277, N'shippingsettings.allowpickupinstore', N'True', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (277, N'shippingsettings.allowpickupinstore', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (278, N'shippingsettings.pickupinstorefee', N'0', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (279, N'shippingsettings.usewarehouselocation', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (280, N'shippingsettings.notifycustomeraboutshippingfrommultiplelocations', N'False', 0)
@@ -847,9 +847,9 @@ INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (285, N'shippin
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (286, N'shippingsettings.displayshipmenteventstostoreowner', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (287, N'shippingsettings.shippingoriginaddressid', N'0', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (288, N'shippingsettings.returnvalidoptionsifthereareany', N'True', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (289, N'shippingsettings.bypassshippingmethodselectionifonlyone', N'False', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (289, N'shippingsettings.bypassshippingmethodselectionifonlyone', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (290, N'shippingsettings.usecuberootmethod', N'True', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (291, N'paymentsettings.activepaymentmethodsystemnames', N'Payments.CheckMoneyOrder,Payments.Manual,Payments.PayInStore,Payments.PurchaseOrder', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (291, N'paymentsettings.activepaymentmethodsystemnames', N'Payments.PurchaseOrder', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (292, N'paymentsettings.allowrepostingpayments', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (293, N'paymentsettings.bypasspaymentmethodselectionifonlyone', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (294, N'taxsettings.taxbasedon', N'BillingAddress', 0)
