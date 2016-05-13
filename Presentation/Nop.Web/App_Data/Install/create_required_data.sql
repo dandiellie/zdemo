@@ -160,8 +160,8 @@ GO
 
 SET IDENTITY_INSERT [dbo].[ShippingMethod] ON
 INSERT [dbo].[ShippingMethod] ([Id], [Name], [Description], [DisplayOrder]) VALUES (1, N'Ground', N'Compared to other shipping methods, ground shipping is carried out closer to the earth', 1)
-INSERT [dbo].[ShippingMethod] ([Id], [Name], [Description], [DisplayOrder]) VALUES (2, N'Next Day Air', N'The one day air shipping', 3)
-INSERT [dbo].[ShippingMethod] ([Id], [Name], [Description], [DisplayOrder]) VALUES (3, N'2nd Day Air', N'The two day air shipping', 3)
+--INSERT [dbo].[ShippingMethod] ([Id], [Name], [Description], [DisplayOrder]) VALUES (2, N'Next Day Air', N'The one day air shipping', 3)
+--INSERT [dbo].[ShippingMethod] ([Id], [Name], [Description], [DisplayOrder]) VALUES (3, N'2nd Day Air', N'The two day air shipping', 3)
 SET IDENTITY_INSERT [dbo].[ShippingMethod] OFF
 GO
 
@@ -796,8 +796,8 @@ INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (234, N'shoppin
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (235, N'shoppingcartsettings.moveitemsfromwishlisttocart', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (236, N'shoppingcartsettings.showproductimagesonshoppingcart', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (237, N'shoppingcartsettings.showproductimagesonwishlist', N'True', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (238, N'shoppingcartsettings.showdiscountbox', N'True', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (239, N'shoppingcartsettings.showgiftcardbox', N'True', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (238, N'shoppingcartsettings.showdiscountbox', N'False', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (239, N'shoppingcartsettings.showgiftcardbox', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (240, N'shoppingcartsettings.crosssellsnumber', N'4', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (241, N'shoppingcartsettings.emailwishlistenabled', N'True', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (242, N'shoppingcartsettings.allowanonymoususerstoemailwishlist', N'False', 0)
@@ -842,7 +842,7 @@ INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (280, N'shippin
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (281, N'shippingsettings.freeshippingoverxenabled', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (282, N'shippingsettings.freeshippingoverxvalue', N'0', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (283, N'shippingsettings.freeshippingoverxincludingtax', N'False', 0)
-INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (284, N'shippingsettings.estimateshippingenabled', N'True', 0)
+INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (284, N'shippingsettings.estimateshippingenabled', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (285, N'shippingsettings.displayshipmenteventstocustomers', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (286, N'shippingsettings.displayshipmenteventstostoreowner', N'False', 0)
 INSERT [dbo].[Setting] ([Id], [Name], [Value], [StoreId]) VALUES (287, N'shippingsettings.shippingoriginaddressid', N'0', 0)

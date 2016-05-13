@@ -3878,18 +3878,18 @@ namespace Nop.Services.Installation
                                             Description ="Compared to other shipping methods, ground shipping is carried out closer to the earth",
                                             DisplayOrder = 1
                                         },
-                                    new ShippingMethod
-                                        {
-                                            Name = "Next Day Air",
-                                            Description ="The one day air shipping",
-                                            DisplayOrder = 3
-                                        },
-                                    new ShippingMethod
-                                        {
-                                            Name = "2nd Day Air",
-                                            Description ="The two day air shipping",
-                                            DisplayOrder = 3
-                                        }
+                                    //new ShippingMethod
+                                    //    {
+                                    //        Name = "Next Day Air",
+                                    //        Description ="The one day air shipping",
+                                    //        DisplayOrder = 3
+                                    //    },
+                                    //new ShippingMethod
+                                    //    {
+                                    //        Name = "2nd Day Air",
+                                    //        Description ="The two day air shipping",
+                                    //        DisplayOrder = 3
+                                    //    }
                                 };
             _shippingMethodRepository.Insert(shippingMethods);
         }
@@ -4846,8 +4846,8 @@ namespace Nop.Services.Installation
                     MoveItemsFromWishlistToCart = true,
                     ShowProductImagesOnShoppingCart = true,
                     ShowProductImagesOnWishList = true,
-                    ShowDiscountBox = true,
-                    ShowGiftCardBox = true,
+                    ShowDiscountBox = false,
+                    ShowGiftCardBox = false,
                     CrossSellsNumber = 4,
                     EmailWishlistEnabled = true,
                     AllowAnonymousUsersToEmailWishlist = false,
@@ -4902,7 +4902,7 @@ namespace Nop.Services.Installation
                     FreeShippingOverXEnabled = false,
                     FreeShippingOverXValue = decimal.Zero,
                     FreeShippingOverXIncludingTax = false,
-                    EstimateShippingEnabled = true,
+                    EstimateShippingEnabled = false,
                     DisplayShipmentEventsToCustomers = false,
                     DisplayShipmentEventsToStoreOwner = false,
                     ReturnValidOptionsIfThereAreAny = true,
