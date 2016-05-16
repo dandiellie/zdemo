@@ -229,4 +229,4 @@ _Pvt_Extensions
 .fake/
 
 # Settings file that points to the local db
-Settings.txt
+Presentation/Nop.Web/App_Data/Settings.txt
