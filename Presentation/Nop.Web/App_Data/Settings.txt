@@ -1,2 +1,0 @@
-DataProvider: sqlserver
-DataConnectionString: Data Source=MALACHI\SQLEXPRESS;Initial Catalog=zdemo;Integrated Security=True;Persist Security Info=True
