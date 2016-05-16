@@ -227,3 +227,6 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# Settings file that points to the local db
+Settings.txt
