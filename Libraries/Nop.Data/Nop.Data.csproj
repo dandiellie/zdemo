@@ -190,9 +190,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="bin\Debug\Nop.Data.dll.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\Autofac.dll" />
+    <Content Include="bin\Debug\Autofac.Integration.Mvc.dll" />
+    <Content Include="bin\Debug\Autofac.Integration.Mvc.xml" />
+    <Content Include="bin\Debug\Autofac.xml" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.SqlServerCompact.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServerCompact.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\Nop.Core.dll" />
+    <Content Include="bin\Debug\Nop.Core.pdb" />
+    <Content Include="bin\Debug\Nop.Data.dll" />
+    <Content Include="bin\Debug\Nop.Data.pdb" />
+    <Content Include="bin\Debug\StackExchange.Redis.StrongName.dll" />
+    <Content Include="bin\Debug\StackExchange.Redis.StrongName.pdb" />
+    <Content Include="bin\Debug\StackExchange.Redis.StrongName.xml" />
+    <Content Include="bin\Debug\System.Data.SqlServerCe.dll" />
+    <Content Include="bin\Debug\System.Web.Mvc.dll" />
+    <Content Include="bin\Debug\System.Web.Mvc.xml" />
+    <Content Include="bin\Debug\System.Web.Razor.dll" />
+    <Content Include="bin\Debug\System.Web.Razor.xml" />
+    <Content Include="bin\Debug\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\Debug\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\Debug\System.Web.WebPages.dll" />
+    <Content Include="bin\Debug\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\Debug\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\Debug\System.Web.WebPages.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
