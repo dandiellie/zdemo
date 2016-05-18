@@ -4976,7 +4976,7 @@ pre {
 
 .master-wrapper-content,
 .header-menu {
-	width: 92.5%;
+	/*width: 92.5%;*/
 }
 
 
@@ -5943,12 +5943,12 @@ pre {
 .header-menu {
 	position: relative;
 	z-index: 5;
-	width: 980px;
+	/*width: 980px;*/
 	margin: 0 auto 30px;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+	/*border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;*/
 	padding: 25px 0;
-	text-align: center;
+	text-align: left;
 }
 .menu-toggle,
 .sublist-toggle {
@@ -6466,7 +6466,7 @@ pre {
 
 
 .header-menu {
-	width: 1200px;
+	/*width: 1200px;*/
 }
 .header-menu > ul > li {
 	padding: 0 20px;
